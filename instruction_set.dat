@@ -1,0 +1,23 @@
+
+
+add	[al,imm8]	[I: 04 ib]
+add	[ax,imm16]	[I: 05 iw]
+add	[eax,imm32]	[I: 05 id]
+add	[r/m16,r16]	[MR: 01 /r]
+add	[r/m32,r32]	[MR: 01 /r]
+add	[r/m16,imm8]	[MI: 83 /0 ib]
+
+**********************************sub****************
+2C ib SUB AL, imm8 I Valid Valid Subtract imm8 from AL.
+2D iw SUB AX, imm16 I Valid Valid Subtract imm16 from AX.
+2D id SUB EAX, imm32 I Valid Valid Subtract imm32 from EAX.
+
+
+83 /5 ib SUB r/m16, imm8 MI Valid Valid Subtract sign-extended imm8 from r/m16.
+83 /5 ib SUB r/m32, imm8 MI Valid Valid Subtract sign-extended imm8 from r/m32.
+
+80 /5 ib SUB r/m8, imm8 MI Valid Valid Subtract imm8 from r/m8.
+81 /5 iw SUB r/m16, imm16 MI Valid Valid Subtract imm16 from r/m16.
+81 /5 id SUB r/m32, imm32 MI Valid Valid Subtract imm32 from r/m32.
+
+**********************************mov****************

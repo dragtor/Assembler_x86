@@ -11,3 +11,5 @@ resw
 extern
 segment
 section
+.data
+.bss
